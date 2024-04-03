@@ -1,0 +1,53 @@
+body, nav, .navbar-brand, .nav-link, .dropdown-item {
+    color: rgb(207, 207, 207) !important;
+}
+
+.dropdown-menu {
+    background-color: rgb(19, 19, 27) !important;
+    border-radius:   10px !important;
+    border-color: rgb(207, 207, 207) !important;
+}
+
+.dropdown-menu a:hover {
+    background-color: rgb(23, 23, 49) !important;
+}
+
+.navbar-nav .nav-item.active > .nav-link,
+.navbar-nav .nav-item:focus > .nav-link {
+    background-color: rgb(23, 23, 49) !important;
+}
+
+.center-title {
+    text-align: center;
+  }
+
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(207, 207, 207);
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.overlay-text {
+    width: 100%;
+}
+
+.feature-container {
+    height: 400px; /* Adjust the height as needed */
+    overflow-y: visible; /* Hide any overflow content */
+}
+
+.feature-image {
+    width: auto;
+    height: 100%;
+}
