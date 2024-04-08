@@ -49,3 +49,15 @@ body, html {
     width: auto;
     height: 100%;
 }
+
+.image-container {
+    display: flex;
+    justify-content: space-between; /* Distribute space between the images */
+    width: 100%; /* Ensure it spans the full width of the container */
+}
+
+.image-container img {
+    height: auto;
+    max-width: 100%; /* Make sure images don't exceed container width */
+}
+
