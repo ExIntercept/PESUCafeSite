@@ -6,6 +6,25 @@
     <title>PESU Cafe - Home</title>
     <link rel="stylesheet" href="styles/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        /* Hide mobile images by default */
+        .mobile-image {
+            display: none;
+        }
+
+        /* Media query for screens smaller than 768px (phones) */
+        @media (max-width: 768px) {
+            /* Hide PC image on phones */
+            .pc-image {
+                display: none;
+            }
+
+            /* Show mobile images on phones */
+            .mobile-image {
+                display: block;
+            }
+        }
+    </style>
 </head>
 <body style="background-color: white;">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -34,8 +53,9 @@
     </nav>
 
     <div class="image-container">
-        <img src="images/ypypyp-1.png" class="img-fluid" alt="image" style="width: 50%;">
-        <img src="images/ypypyp-2.png" class="img-fluid" alt="image" style="width: 50%;">
+        <img src="images/ypypyp.png" class="img-fluid pc-image" alt="image">
+        <img src="images/ypypyp-1.png" class="img-fluid mobile-image" alt="image">
+        <img src="images/ypypyp-2.png" class="img-fluid mobile-image" alt="image">
     </div>
 
     <footer style="padding-top:2%; background-color: rgb(208, 208, 208);">
@@ -46,7 +66,7 @@
                     <ul class="list-unstyled">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="https://github.com/ExIntercept/PESUCafe/releases">Downloads</a></li>
-                        <li><a href="#">features.html</a></li>
+                        <li><a href="features.html">Features</a></li>
                     </ul>
                 </div>
             </div>
