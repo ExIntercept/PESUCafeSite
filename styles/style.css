@@ -25,25 +25,32 @@ body, html {
     color: #333;
 }
 
+/* PC image specific styles */
+.pc-image {
+    margin-top: 0; /* Set margin-top to 0 for PC image */
+}
+
 /* Image container styles */
 .image-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 0; /* Remove margin-top */
+    margin-bottom: 0; /* Remove margin-bottom */
 }
 
 .image-container img {
     max-width: 100%;
     height: auto;
-    margin: 10px;
+    margin: 10px; /* Default margin for mobile images */
     border-radius: 10px;
 }
 
 /* Footer styles */
 footer {
-    padding-top: 2%;
+    padding-top: 2%; /* Adjust padding-top */
+    padding-bottom: 0; /* Remove padding-bottom */
     background-color: rgb(208, 208, 208);
 }
 
@@ -58,4 +65,26 @@ footer ul li a {
 footer ul li a:hover {
     text-decoration: none;
     color: rgba(255, 200, 0, 0.7);
+}
+
+/* Media query for screens smaller than 768px (phones) */
+@media (max-width: 768px) {
+    /* Hide PC image on phones */
+    .pc-image {
+        display: none;
+    }
+
+    /* Show mobile images on phones */
+    .mobile-image {
+        display: block;
+    }
+
+    /* Adjust margin for mobile images on smaller screens */
+    .image-container {
+        flex-direction: column; /* Stack images vertically on phones */
+    }
+
+    .image-container img {
+        margin: 10px 0; /* Set top and bottom margin to 10px, left and right to 0 */
+    }
 }
